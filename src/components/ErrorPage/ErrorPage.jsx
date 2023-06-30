@@ -1,13 +1,8 @@
-import React from 'react';
-import { Image } from './ErrorPage.styled';
-import imgError from '../../images/page-404.png';
-
-// const url = 'https://www.kcst.edu.kw/assets/frontend/images/coming-img.png';
+import styles from "./ErrorPage.module.scss";
+import imgError from "../../images/page-404.png";
 
 const ErrorPage = () => {
-    return (
-        <Image src={imgError} alt={'Page 404'} />
-    );
+  return <img className={styles.image} src={imgError} alt="Page 404" />;
 };
 
 export default ErrorPage;

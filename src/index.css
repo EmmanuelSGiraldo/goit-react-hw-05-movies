@@ -1,4 +1,4 @@
-@import-normalize;
+
 /* bring in normalize.css styles */
 
 :root {
@@ -56,4 +56,9 @@ img {
 
 button {
   cursor: pointer;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
 }
