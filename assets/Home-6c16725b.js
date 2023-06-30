@@ -1,4 +1,4 @@
-import{n as m,r as t,j as e,L as l}from"./index-c6bbf3d8.js";import{f as p}from"./API-501496fd.js";import{n as x}from"./notiflix-aio-3.2.6.min-255e75a6.js";import{M as u}from"./MoviesList-e45170b9.js";import"./index-a5709a24.js";const d=m.h1`
+import{n as m,r as t,j as e,L as l}from"./index-37a330ad.js";import{f as p}from"./API-501496fd.js";import{n as x}from"./notiflix-aio-3.2.6.min-af1f91f8.js";import{M as u}from"./MoviesList-e0ae96f1.js";import"./index-eb546f6a.js";const d=m.h1`
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
