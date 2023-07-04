@@ -1,15 +1,11 @@
 import axios from 'axios';
 
-// /trending/get-trending список найпопулярніших фільмів на сьогодні для створення колекції на головній сторінці.
-// /search/search-movies пошук фільму за ключовим словом на сторінці фільмів.
-// /movies/get-movie-details запит повної інформації про фільм для сторінки кінофільму.
-// /movies/get-movie-credits запит інформації про акторський склад для сторінки кінофільму.
-// /movies/get-movie-reviews запит оглядів для сторінки кінофільму.
+
 
 
 
 const BASE_URL = 'https://api.themoviedb.org/3/';
-const API_KEY = '4bf7f5d1496efdab827169a7539a0778';
+const API_KEY = '9075f13015b8e53ed9a052e56b6922a0';
 
 export const fetchPopularMovies = async () => {
     const response = await axios.get(`${BASE_URL}trending/movie/day?api_key=${API_KEY}`);
