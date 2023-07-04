@@ -1,8 +1,41 @@
 .container {
-    max-width: 1600px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 65px; /* Ajusta la posición vertical según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  .sunIcon {
+    color: #f5c42f; // Color amarillo para el sol
   }
-  
+
+  &:hover {
+    background-color: #555;
+  }
+
+  &:active {
+    background-color: #777;
+  }
+}
+
+.dark {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}

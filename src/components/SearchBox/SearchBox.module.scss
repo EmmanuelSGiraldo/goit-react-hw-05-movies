@@ -37,10 +37,12 @@
   cursor: pointer;
   outline: none;
   background-color: var(--accent-color);
+  color: chartreuse;
 
   &:hover,
   &:focus {
     opacity: 1;
+    transform: scale(1.1);
   }
 }
 
@@ -48,7 +50,8 @@
   transition: transform var(--transition);
 
   &:hover {
-    color: #ffffff;
-    transform: scale(1.2);
+   
+    transform: scale(1.3);
+
   }
 }

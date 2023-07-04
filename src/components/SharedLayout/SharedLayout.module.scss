@@ -6,7 +6,12 @@
   padding: 8px 0;
   margin-bottom: 16px;
   border-bottom: 1px solid black;
-
+  border-radius: 2%;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
   > nav {
       display: flex;
   }
@@ -16,7 +21,7 @@
   padding: 8px 10px;
   border-radius: 4px;
   text-decoration: none;
-  color: black;
+  color:rgb(250, 250, 250);
   font-size: 18px;
   font-weight: 700;
 
@@ -27,5 +32,6 @@
   &:hover,
   &:focus {
       transform: scale(1.05);
+      color:chartreuse;
   }
 }
