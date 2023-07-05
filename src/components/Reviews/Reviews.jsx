@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { fetchMovieReview } from '../../API';
-import Loader from '../Loader/Loader';
-import styles from './Reviews.module.scss';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { fetchMovieReview } from "../../API";
+import Loader from "../Loader/Loader";
+import styles from "./Reviews.module.scss";
 
 const Reviews = () => {
   const [movieReview, setMovieReview] = useState([]);
@@ -17,7 +17,9 @@ const Reviews = () => {
       try {
         const responseMovie = await fetchMovieReview(movieId);
         if (responseMovie.length === 0) {
-          const error = new Error('Sorry, we do not have any reviews for this movie.');
+          const error = new Error(
+            "Sorry, we do not have any reviews for this movie."
+          );
           setError(error);
           return;
         }
@@ -32,7 +34,11 @@ const Reviews = () => {
 
   return (
     <>
-      {error && <div className={styles.errorHandler}>Sorry, we do not have any reviews for this movie.</div>}
+      {error && (
+        <div className={styles.errorHandler}>
+          Sorry, we do not have any reviews for this movie.
+        </div>
+      )}
       {isLoading && <Loader />}
       <ul className={styles.reviewsList}>
         {movieReview.map(({ id, author, content }) => (

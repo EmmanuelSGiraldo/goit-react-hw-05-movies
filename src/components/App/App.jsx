@@ -26,7 +26,7 @@ export const App = () => {
 
   return (
     <div className={containerClass}>
-        <button onClick={toggleDarkMode} className={styles.toggleButton}>
+      <button onClick={toggleDarkMode} className={styles.toggleButton}>
         <FontAwesomeIcon
           icon={isDarkMode ? faSun : faMoon}
           className={isDarkMode ? styles.sunIcon : styles.moonIcon}

@@ -27,12 +27,7 @@ const MovieCard = ({ info }) => {
   return (
     <main>
       <div className={Styles.Wrap}>
-        <img
-          className={Styles.Image}
-          src={posterUrl}
-          alt={title}
-          width={342}
-        />
+        <img className={Styles.Image} src={posterUrl} alt={title} width={342} />
         <div className={Styles.Info}>
           <h1>{title}</h1>
           <p>User Score: {vote}%</p>
@@ -46,10 +41,14 @@ const MovieCard = ({ info }) => {
         <h3>Additional information</h3>
         <ul>
           <li>
-            <NavLink className={Styles.AddLink} to="cast">Cast</NavLink>
+            <NavLink className={Styles.AddLink} to="cast">
+              Cast
+            </NavLink>
           </li>
           <li>
-            <NavLink className={Styles.AddLink} to="reviews">Reviews</NavLink>
+            <NavLink className={Styles.AddLink} to="reviews">
+              Reviews
+            </NavLink>
           </li>
         </ul>
         <Suspense fallback={<Loader />}>

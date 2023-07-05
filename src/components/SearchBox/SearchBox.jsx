@@ -1,8 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { Notify } from "notiflix";
-import { Form, Input, Button, } from "./SearchBox.module.scss";
-
+import { Form, Input, Button } from "./SearchBox.module.scss";
 
 const SearchBox = ({ value, onSubmit }) => {
   const [query, setQuery] = useState(value);
@@ -30,7 +29,8 @@ const SearchBox = ({ value, onSubmit }) => {
         placeholder="Search movie"
       />
       <button className={Button} type="submit" aria-label="Search">
-        <svg  className="svg"
+        <svg
+          className="svg"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           width="22"
